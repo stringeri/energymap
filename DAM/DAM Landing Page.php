@@ -71,15 +71,6 @@
   </head>
   <body>
     <div id="barchart_material" style="width: 900px; height: 500px;"></div>
-  <?php 
-        $hour = $_POST['hour'];
-        $sort = $_POST['sort'];
-        $search = $_POST['search'];
-        $start = "0";
-        if ($search < "1") {
-          $search = "None";}
-        echo exec('python ScrapeUpdate.py'. " ". $hour . $sort . " ". $search, $retval, $retval2);
-        ?>
   </body>
 </html>
 
